@@ -1,0 +1,19 @@
+.container {
+    display: flex;
+    /* 子要素を折り返ししたい場合 */
+    flex-wrap: wrap;
+
+    /* 水平方向の揃え */
+    justify-content: space-around;
+
+    /* 垂直方向の揃え */
+    align-items: center;
+    height: 100vh;
+}
+
+.item {
+    background: #0bd;
+    color: #fff;
+    margin: 10px;
+    padding: 10px;
+}
