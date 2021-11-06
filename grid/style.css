@@ -1,0 +1,21 @@
+.container {
+    display: grid;
+    /* グリッドアイテムの幅を設定する */
+    /* grid-template-columns: 200px 200px 200px; */
+
+    /* 上記のようにgrid-template-columsの設定値をpxにすると幅が固定されるためfrを使う */
+    /* そうすると、比率で設定できるので画面が縮小した場合、合わせてグリッドアイテムも縮小する */
+    grid-template-columns: 1fr 1fr 1fr;
+
+    /* グリッドアイテムの高さを設定する */
+    grid-template-rows: 200px 200px;
+
+    /* グリッドアイテム同士の余白を付ける */
+    gap: 10px;
+}
+
+.item {
+    background: #0bd;
+    color: #fff;
+    padding: 10px;
+}
