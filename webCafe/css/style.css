@@ -1,0 +1,57 @@
+/* コードの文字化けを防ぐ */
+@charset "UTF-8";
+
+/* 共通部分 */
+html {
+    font-size: 100%;
+}
+body {
+    font-family: sans-serif;
+    line-height: 1.7;
+    color: #432;
+}
+a {
+    /* 傍線を消すことができる */
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+/* Header */
+.logo {
+    width: 210px;
+    margin-top: 14px;
+}
+
+.page-header {
+    display: flex;
+    /* 画面の左右端に揃える */
+    justify-content: space-between;
+}
+.wrapper {
+    max-width: 1100px;
+    margin: 0 auto;
+    /* 左右にpaddingを付けるとスマートフォンなどの狭い画面でみても余白ができて見やすくなる */
+    padding: 0 4%;
+}
+
+.main-nav {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    /* ・が消える */
+    list-style: none;
+}
+.main-nav li {
+    margin-left: 36px;
+}
+.main-nav a {
+    /* リンクはデフォルトだと青色なので色を変える */
+    color: #432;
+}
+.main-nav a:hover {
+    /* カーソルを合わせたときだけ色を変える */
+    color: #0bd;
+}
